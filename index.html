@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container">
+        <div class="display">
+            <h1>Weather Dashboard</h1>
+        </div>
+
+        <!-- location Section -->
+        <div class="container-2">
+            <div class="search">
+                <p class="serhc_tab">Enter a City Name</p>
+                <input type="text" placeholder="Enteer the city name" class="input_box" data-input>
+                <button class="search_button" data-search>Search</button>
+
+                <div class="lines">
+                    <span class="line"></span><div class="or">OR</div><span class="line"></span>
+                </div>
+
+
+                <button class="current-location" data-current-location>Use Current Location</button>
+            </div>
+
+
+            <!-- curent Weather Display -->
+            <div class="container-3">
+                <div class="current-weather-display">
+                    <div class="body-weather">
+                        <div class="data">
+                            <div class="loader"></div>
+                            <p class="location-name-date" data-currentdaydate></p>
+                            <p class="location-name-date" data-current-location-name></p>
+                            <p class="Temperature" data-currentlocation-temperature></p>
+                            <p class="wind" data-currentlocation-wind></p>
+                            <p class="Humidity" data-current-location-humidity></p>
+                        </div>
+                        <div class="image">
+                            <img data-image draggable="false">
+                            <p class="image-Description" data-imagedesc></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- four day weather fourcast -->
+                <div class="forecast">
+                    <p class="titles">4-Day ForeCast</p>
+                    <div class="mainss">
+                        <div class="DayFirst">
+                            <p data-date>The data is :</p>
+                            <img class="images" style="height: 50px;width: 50px;">
+                            <p data-name></p>
+                            <p data-temp></p>
+                            <p data-wind></p>
+                            <p data-humidity></p>
+                        </div>
+
+                        <div class="DaySecond">
+                            <p data-second-date></p>
+                            <img data-second-image >
+                            <p data-image-info></p>
+                            <p data-second-Temp  ></p>
+                            <p data-second-wind  ></p>
+                            <p data-second-humidty ></p>
+                        </div>
+                        <div class="DayThird">
+                            <p data-third-date></p>
+                            <img data-third-image>
+                            <p data-iages-info></p>
+                            <p  data-third-Temp></p>
+                            <p  data-third-wind></p>
+                            <p third-humidty></p>
+                        </div>
+                        <div class="DayFourth">
+                            <p data-dourth-date></p>
+                            <img data-fourth-image>
+                            <p data-images-info></p>
+                            <p  data-fourth-Temp></p>
+                            <p  data-fourth-wind></p>
+                            <p fourth-humidty></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
+<!-- <div class="loader"></div> -->
