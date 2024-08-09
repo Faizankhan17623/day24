@@ -11,7 +11,7 @@
 <body>
     <section class="container">
         <div class="display">
-            <h1>Weather Dashboard</h1>
+            <h1 class="Dash">Weather Dashboard</h1>
         </div>
 
         <!-- location Section -->
@@ -36,15 +36,17 @@
                     <div class="body-weather">
                         <div class="data">
                             <div class="loader"></div>
-                            <p class="location-name-date" data-currentdaydate></p>
-                            <p class="location-name-date" data-current-location-name></p>
-                            <p class="Temperature" data-currentlocation-temperature></p>
-                            <p class="wind" data-currentlocation-wind></p>
-                            <p class="Humidity" data-current-location-humidity></p>
+                            <div class="locations">
+                                <p class="location-name-date colors" data-currentdaydate></p>
+                                <p class="location-name-date colors" data-current-location-name></p>
+                            </div>
+                            <p class="Temperature colors" data-currentlocation-temperature></p>
+                            <p class="wind colors" data-currentlocation-wind></p>
+                            <p class="Humidity colors" data-current-location-humidity></p>
                         </div>
                         <div class="image">
                             <img data-image draggable="false">
-                            <p class="image-Description" data-imagedesc></p>
+                            <p class="image-Description colors" data-imagedesc></p>
                         </div>
                     </div>
                 </div>
@@ -54,8 +56,8 @@
                     <p class="titles">4-Day ForeCast</p>
                     <div class="mainss">
                         <div class="DayFirst">
-                            <p data-date>The data is :</p>
-                            <img class="images" style="height: 50px;width: 50px;">
+                            <p data-date></p>
+                            <img class="images">
                             <p data-name></p>
                             <p data-temp></p>
                             <p data-wind></p>

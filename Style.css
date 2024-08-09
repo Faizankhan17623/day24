@@ -47,6 +47,7 @@
     width: 350px;
     height: 50px;
     background-color: #0b99e6;
+    color: white;
 }
 input::placeholder{
     position: absolute;
@@ -74,6 +75,7 @@ input::placeholder{
     width: 350px;
     height: 50px;
     background-color: #2e3940;
+    color: white;
 }
 
 
@@ -85,11 +87,11 @@ input::placeholder{
 
 .current-weather-display{
     height: 200px ;
-    width: 880px;
+    width: 840px;
     background-color: #0b99e6;
-    /* border: 1px solid red; */
+    /* border: 1px solid green; */
     display: flex;
-    /* justify-content: space-between; */
+    margin-top: 30px;
 }
 
 .body-weather{
@@ -155,10 +157,11 @@ input::placeholder{
 
 .DayFirst{
     height: 210px;
-    /* background-color: #ccc8be; */
+    background-color: #ccc8be;
     width: 200px;
     /* border: 1px solid red; */
 }
+
 .DaySecond{
     background-color: #ccc8be;
     height: 210px;
@@ -179,3 +182,39 @@ input::placeholder{
     width: 200px;
     /* border: 1px solid red; */
 }
+
+.serhc_tab{
+    font-size: 30px;
+    font-weight: bold
+    ;
+}
+
+
+.Dash{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.colors{
+    color: white;
+    font-size: 20px;
+}
+
+
+.DayFirst,.DaySecond,.DayThird,.DayFourth{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .display {
+      background-color: black;
+      width: 100%;
+    }
+    
+  }

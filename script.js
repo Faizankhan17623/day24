@@ -82,6 +82,7 @@ function First_day(data){
     Current_humidity = document.querySelector('[data-humidity]');
     Current_description = document.querySelector('[data-name]');
 
+    Current_time.innerText = "the time is"
     Current_time.textContent = data.forecast.forecastday[0].date;
     Current_temperature.textContent = data.forecast.forecastday[0].day.maxtemp_c;
     Current_wind.textContent= data.forecast.forecastday[0].day.maxwind_kph;
